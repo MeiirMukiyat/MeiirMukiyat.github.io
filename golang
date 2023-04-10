@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func stringLengths(strings []string) []int {
+	lengths := make([]int, len(strings))
+	for i, str := range strings {
+		lengths[i] = len(str)
+	}
+	return lengths
+}
+
+func main() {
+	strings := []string{"hello", "world", "goodbye"}
+	lengths := stringLengths(strings)
+	fmt.Println(lengths)
+}
